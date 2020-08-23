@@ -15,7 +15,7 @@ class GallerySaverPlugin private constructor(
             val channel = MethodChannel(registrar.messenger(),
                     "gallery_saver")
             if(registrar.activity() == null) {
-                return;
+                return
             }
             val gallerySaver = GallerySaver(registrar.activity())
             registrar.addRequestPermissionsResultListener(gallerySaver)
